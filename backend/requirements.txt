@@ -1,0 +1,11 @@
+Django
+djangorestframework
+djangorestframework-simplejwt
+django-filter
+django-cors-headers
+python-dotenv
+gunicorn
+psycopg2-binary
+dj-database-url
+whitenoise
+razorpay
