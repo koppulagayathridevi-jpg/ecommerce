@@ -1,0 +1,216 @@
+/* =========================================
+   ADMIN CART ITEMS PAGE
+========================================= */
+
+.admin-page {
+  width: 100%;
+  min-height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.admin-page h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.admin-page > p {
+  margin: 0 0 28px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.admin-table thead {
+  background: #f8fafc;
+}
+
+.admin-table th {
+  padding: 16px 18px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.admin-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f0f1f3;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ID column */
+
+.admin-table th:first-child,
+.admin-table td:first-child {
+  width: 80px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Quantity */
+
+.admin-table th:last-child,
+.admin-table td:last-child {
+  font-weight: 600;
+}
+
+/* =========================================
+   EMPTY TABLE
+========================================= */
+
+.admin-table tbody:empty::after {
+  content: "No cart items found";
+  display: block;
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* =========================================
+   TABLE WRAPPER
+   Useful for smaller screens
+========================================= */
+
+.admin-page {
+  overflow-x: hidden;
+}
+
+.admin-table {
+  min-width: 600px;
+}
+
+/* =========================================
+   MOBILE / TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .admin-page {
+    padding: 24px 20px;
+  }
+
+  .admin-page h1 {
+    font-size: 26px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 14px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .admin-page {
+    padding: 20px 14px;
+  }
+
+  .admin-page h1 {
+    font-size: 24px;
+  }
+
+  .admin-page > p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* Horizontal scrolling for table */
+
+  .admin-table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 12px;
+  }
+
+  .admin-table thead,
+  .admin-table tbody,
+  .admin-table tr {
+    width: 100%;
+  }
+
+  .admin-table th {
+    font-size: 12px;
+    padding: 13px 14px;
+  }
+
+  .admin-table td {
+    font-size: 13px;
+    padding: 13px 14px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .admin-page {
+    padding: 16px 10px;
+  }
+
+  .admin-page h1 {
+    font-size: 21px;
+  }
+
+  .admin-page > p {
+    font-size: 13px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 11px 12px;
+    font-size: 12px;
+  }
+}
