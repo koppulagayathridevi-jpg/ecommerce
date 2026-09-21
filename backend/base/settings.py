@@ -26,6 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
@@ -33,7 +34,7 @@ load_dotenv(BASE_DIR / '.env')
 SECRET_KEY = 'django-insecure-7f%99k_x$uixwuk4=&e_)&@5&-kp2v31u9^2g47op!gupbulob'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG',True)
 
 ALLOWED_HOSTS = []
 
